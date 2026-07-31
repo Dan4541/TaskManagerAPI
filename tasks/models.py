@@ -60,4 +60,4 @@ class Task(models.Model):
         ordering = ['-due_date', 'created_at'] # Ordena por fecha límite descendente
 
     def __str__(self):
-        return f"{self.title} ({self.get_status_display()})"
+        return f"{self.title} ({self.get_status_display()})" # type: ignore
